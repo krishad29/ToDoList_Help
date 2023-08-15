@@ -8,7 +8,9 @@
 //** This file contains all the code for the ToDoItem class**
 
 import Foundation
-class ToDoItem{
+class ToDoItem: Identifiable{
+    var id = UUID()
+    
     
     var title = ""
     var isImportant = false
